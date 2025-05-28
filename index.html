@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <p>Samsungo&trade;</p>
+      <a href="index.html" class="active">Testador de Senhas</a>
+      <a href="index2.html">Cálculos</a>
+      <a href="index3.html">Créditos</a>
+    </nav>
+
+    <main>
+      <label for="input" id="input_label">Testador de Senhas</label>
+      <input type="text" id="input" placeholder="Crie uma senha">
+
+      <div class="counters">
+        <div>
+          Letras Minúsculas:
+          <span id="counter1">zero</span>
+        </div>
+        <div>
+          Letras Maiúsculas:
+          <span id="counter2">zero</span>
+        </div>
+        <div>
+          Números:
+          <span id="counter3">zero</span>
+        </div>
+        <div>
+          Símbolos:
+          <span id="counter4">zero</span>
+        </div>
+      </div>
+
+      <p id="resultado">Sua senha é...</p>
+
+      <table>
+        <tr>
+          <td>Tamanho da senha</td>
+          <td id="data1">0 caracteres</td>
+        </tr>
+        <tr>
+          <td>Tipos de caracteres usados</td>
+          <td id="data2">0</td>
+        </tr>
+        <tr>
+          <td>Total de senhas possíveis</td>
+          <td id="data3">0</td>
+        </tr>
+        <tr>
+          <td>Entropia</td>
+          <td id="data4">0 bits</td>
+        </tr>
+        <tr>
+          <td>Tempo para decifrar (ataque de força bruta)</td>
+          <td id="data5">0 segundos</td>
+        </tr>
+      </table>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="radio" id="radio1">
+          1 milhão senhas/sec
+        </label>
+        <label>
+          <input type="radio" name="radio" id="radio2">
+          1 bilhão senhas/sec
+        </label>
+        <label>
+          <input type="radio" name="radio" id="radio3" checked>
+          1 trilhão senhas/sec
+        </label>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
